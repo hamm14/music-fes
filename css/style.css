@@ -612,6 +612,7 @@ iframe {
 }
 .notice-title:hover {
   color: #666666;
+  cursor: pointer;
 }
 .notice-title.open + .slide {
   max-height: 30rem;
