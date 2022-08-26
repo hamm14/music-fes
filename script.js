@@ -36,3 +36,9 @@ $('#page-top a').click(function () {
 });
 
 })
+
+$('.an').on('inview', function (event, isInView) {
+  if (isInView) {
+    $(this).stop().addClass("animated");
+  }
+});

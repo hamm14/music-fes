@@ -689,7 +689,9 @@ footer {
 }
 .sns .flex h2:hover {
   opacity: 0.6;
- background: #FF4F50;
+  background: #FF4F50;
+  cursor: pointer;
+
 }
 .sns .flex h2 {
   font-weight: normal;
@@ -900,7 +902,7 @@ footer {
     font-size: 1.5rem;
   }
   .mainvisual {
-    background: url(../img/sp-back.png) no-repeat center / cover;
+    background: url(../img/spback-top1.png) no-repeat center /cover, url(../img/spback-left.png) no-repeat center / 110% 100vh #ff8888;
   }
   .fukidashi1 {
     width: 100%;
@@ -1069,7 +1071,7 @@ footer {
     margin-bottom: 35px;
   }
   .notice-title {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin: 1.5rem 0 0;
   }
   .notice-title::before, .notice-title::after {
@@ -1195,4 +1197,15 @@ footer {
     width: 50px;
     height: 50px;
   }
+}
+
+
+.fade_up {
+	opacity: 0;
+	transform: perspective(1000px) translate3d(0,50px,-10px);
+	transition: all 1.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+.fade_up.animated {
+	opacity: 1;
+	transform: perspective(1000px) translate3d(0,0,0);
 }
